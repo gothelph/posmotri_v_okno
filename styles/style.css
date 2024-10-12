@@ -207,7 +207,7 @@ ol {
 }
 
 .content__list {
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 300px;
   display: flex;
   flex-direction: column;
