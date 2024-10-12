@@ -52,7 +52,6 @@ ol {
 .content {
   margin: 0 30px;
   inline-size: 100%;
-  height: 534px;
   display: flex;
   gap: 30px;
   align-items: flex-end;
@@ -61,13 +60,12 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  width: 710px;
   gap: 16px;
 }
 
 .result__video {
   width: 100%;
-  height: 386px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -210,16 +208,14 @@ ol {
 
 .content__list {
   overflow-y: scroll;
-  scrollbar-width: none;
   block-size: 300px;
   display: flex;
   flex-direction: column;
-  gap: 34px;
   position: relative;
 }
 
-.content__list-item {
-  margin: 2px;
+.content__list-item:not(:last-child) {
+  margin-bottom: 34px;
 }
 
 .title {
@@ -227,7 +223,7 @@ ol {
   font-size: 75px;
   text-transform: uppercase;
   padding-bottom: 26px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   line-height: 70px;
 }
 
@@ -246,6 +242,10 @@ ol {
   color: white;
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px;
 }
 
 .content__video-card-description {
@@ -281,8 +281,4 @@ ol {
 
 .content__card-link:focus-visible {
   outline: 1px solid white;
-}
-
-.more-button-template {
-  width: 100%;
 }
