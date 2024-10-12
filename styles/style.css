@@ -295,7 +295,7 @@ ol {
 }
 
 .content__card-link:hover {
-  text-decoration: underline 1px #fff;
+  text-decoration: underline 1px white;
 }
 
 .content__card-link:active {
