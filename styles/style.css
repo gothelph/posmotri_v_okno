@@ -72,6 +72,7 @@ ol {
 
 .result__video {
   width: 100%;
+  height: 386px;
   object-fit: cover;
   object-position: center;
 }
@@ -95,6 +96,7 @@ ol {
   font-size: 18px;
   line-height: 21.6px;
   text-align: left;
+  padding-bottom: 5px;
 }
 
 .search-form__label {
@@ -135,6 +137,7 @@ ol {
 
 .search-form__textfield::placeholder {
   color: white;
+  opacity: 70%;
 }
 
 .search-form__textfield:active {
