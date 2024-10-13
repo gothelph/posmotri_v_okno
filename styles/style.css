@@ -105,6 +105,7 @@ ol {
   outline: none;
   width: fit-content;
   outline-offset: 1px;
+  appearance: none;
 }
 
 .search-form__label .search-form__textfield {
@@ -189,7 +190,6 @@ ol {
 
 .button:hover {
   text-decoration: underline 1px white;
-  background-color: #545050;
 }
 
 .button:focus {
@@ -281,4 +281,8 @@ ol {
 
 .content__card-link:focus-visible {
   outline: 1px solid white;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
